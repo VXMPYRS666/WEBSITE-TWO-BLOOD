@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Metanoia - Understanding the Dangers</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header {
+            background-color: #8b0000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            margin: 20px;
+        }
+        article {
+            flex: 3;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 22px;
+            color: #8b0000;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #8b0000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        .sidebar-title {
+            font-size: 20px;
+            color: #8b0000;
+            margin-bottom: 10px;
+        }
+        .sidebar-content {
+            font-size: 16px;
+        }
+
+        .blackout {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0;
+            z-index: 9999;
+            transition: opacity 0s; /* No transition */
+        }
+        .blackout.active {
+            opacity: 1;
+        }
+    </style>
+    <script>
+        // Function to trigger blackout effect and redirect
+        function triggerBlackout() {
+            const blackout = document.querySelector('.blackout');
+            blackout.classList.add('active');
+            setTimeout(function() {
+                window.location.href = 'alt.html';
+            }, 3000); // Wait for 3 seconds before redirecting
+        }
+
+        // Start the blackout effect after 10 seconds
+        setTimeout(triggerBlackout, 10000); // 10000 milliseconds = 10 seconds
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Blood Metanoia Awareness</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Understanding the Dangers of Blood Metanoia</h2>
+            <p><strong>Blood Metanoia</strong> is a rare and highly dangerous blood disorder that affects the body's ability to regenerate blood cells. This debilitating condition is characterized by the following symptoms:</p>
+            <ul>
+                <li>Severe anemia</li>
+                <li>Chronic fatigue</li>
+                <li>Frequent infections due to a weakened immune system</li>
+                <li>Uncontrollable bleeding</li>
+            </ul>
+            <h2>Causes and Risk Factors</h2>
+            <p>The exact cause of Blood Metanoia remains unknown, but research suggests it may be linked to genetic mutations and environmental factors. Risk factors include:</p>
+            <ul>
+                <li>Family history of blood disorders</li>
+                <li>Exposure to certain chemicals and toxins</li>
+                <li>Autoimmune conditions</li>
+            </ul>
+            <h2>Complications</h2>
+            <p>If left untreated, Blood Metanoia can lead to severe complications, including:</p>
+            <ul>
+                <li>Organ failure</li>
+                <li>Stroke</li>
+                <li>Sepsis</li>
+                <li>Death</li>
+            </ul>
+            <h2>Treatment Options</h2>
+            <p>While there is no cure for Blood Metanoia, treatment focuses on managing symptoms and improving quality of life. Options include:</p>
+            <ul>
+                <li>Blood transfusions</li>
+                <li>Medications to boost blood cell production</li>
+                <li>Bone marrow transplants</li>
+                <li>Supportive care for infections and other complications</li>
+            </ul>
+            <p>If you or someone you know is experiencing symptoms of Blood Metanoia, it is crucial to seek medical attention immediately. Early diagnosis and intervention can significantly improve outcomes.</p>
+        </article>
+        <aside>
+            <div class="sidebar-title">Related Articles</div>
+            <div class="sidebar-content">
+                <p><a href="#">What is Paroxysmal Nocturnal Hemoglobinuria?</a></p>
+                <p><a href="#">Understanding Rare Blood Disorders</a></p>
+                <p><a href="#">Managing Chronic Fatigue</a></p>
+                <p><a href="#">Genetic Testing for Blood Disorders</a></p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blood Metanoia Awareness</p>
+    </footer>
+    <div class="blackout"></div> <!-- Blackout overlay -->
+</body>
+</html>
